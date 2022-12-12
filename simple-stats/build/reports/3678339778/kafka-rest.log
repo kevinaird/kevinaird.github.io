@@ -1,0 +1,290 @@
+===> User
+uid=1000(appuser) gid=1000(appuser) groups=1000(appuser)
+===> Configuring ...
+===> Running preflight checks ... 
+===> Check if Kafka is healthy ...
+[2022-12-12 17:45:36,466] INFO AdminClientConfig values: 
+	bootstrap.servers = [kafka:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig)
+[2022-12-12 17:45:37,135] INFO Kafka version: 7.3.0-ccs (org.apache.kafka.common.utils.AppInfoParser)
+[2022-12-12 17:45:37,135] INFO Kafka commitId: b8341813ae2b0444 (org.apache.kafka.common.utils.AppInfoParser)
+[2022-12-12 17:45:37,139] INFO Kafka startTimeMs: 1670867137131 (org.apache.kafka.common.utils.AppInfoParser)
+[2022-12-12 17:45:37,255] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient)
+[2022-12-12 17:45:37,264] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (kafka/172.18.0.4:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2022-12-12 17:45:37,368] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient)
+[2022-12-12 17:45:37,368] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (kafka/172.18.0.4:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2022-12-12 17:45:37,469] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient)
+[2022-12-12 17:45:37,470] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (kafka/172.18.0.4:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2022-12-12 17:45:37,771] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient)
+[2022-12-12 17:45:37,772] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (kafka/172.18.0.4:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+[2022-12-12 17:45:38,175] INFO [AdminClient clientId=adminclient-1] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient)
+[2022-12-12 17:45:38,175] WARN [AdminClient clientId=adminclient-1] Connection to node -1 (kafka/172.18.0.4:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+Using log4j config /etc/kafka-rest/log4j.properties
+===> Launching ... 
+===> Launching kafka-rest ... 
+[2022-12-12 17:45:42,645] INFO KafkaRestConfig values: 
+	access.control.allow.headers = 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	access.control.skip.options = true
+	advertised.listeners = []
+	api.endpoints.allowlist = []
+	api.endpoints.blocklist = []
+	api.v2.enable = true
+	api.v3.enable = true
+	api.v3.produce.rate.limit.cache.expiry.ms = 3600000
+	api.v3.produce.rate.limit.enabled = false
+	api.v3.produce.rate.limit.max.bytes.global.per.sec = 10000000
+	api.v3.produce.rate.limit.max.bytes.per.sec = 10000000
+	api.v3.produce.rate.limit.max.requests.global.per.sec = 10000
+	api.v3.produce.rate.limit.max.requests.per.sec = 10000
+	api.v3.produce.response.thread.pool.size = 2
+	authentication.method = NONE
+	authentication.realm = 
+	authentication.roles = [*]
+	authentication.skip.paths = []
+	bootstrap.servers = kafka:9092
+	client.init.timeout.ms = 60000
+	client.sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	client.sasl.kerberos.min.time.before.relogin = 60000
+	client.sasl.kerberos.service.name = 
+	client.sasl.kerberos.ticket.renew.jitter = 0.05
+	client.sasl.kerberos.ticket.renew.window.factor = 0.8
+	client.sasl.mechanism = GSSAPI
+	client.security.protocol = PLAINTEXT
+	client.ssl.cipher.suites = 
+	client.ssl.enabled.protocols = TLSv1.2,TLSv1.1,TLSv1
+	client.ssl.endpoint.identification.algorithm = 
+	client.ssl.key.password = [hidden]
+	client.ssl.keymanager.algorithm = SunX509
+	client.ssl.keystore.location = 
+	client.ssl.keystore.password = [hidden]
+	client.ssl.keystore.type = JKS
+	client.ssl.protocol = TLS
+	client.ssl.provider = 
+	client.ssl.trustmanager.algorithm = PKIX
+	client.ssl.truststore.location = 
+	client.ssl.truststore.password = [hidden]
+	client.ssl.truststore.type = JKS
+	client.timeout.ms = 500
+	client.zk.session.timeout.ms = 30000
+	compression.enable = true
+	confluent.resource.name.authority = 
+	connector.connection.limit = 0
+	consumer.instance.timeout.ms = 300000
+	consumer.iterator.backoff.ms = 50
+	consumer.iterator.timeout.ms = 1
+	consumer.request.max.bytes = 67108864
+	consumer.request.timeout.ms = 1000
+	consumer.threads = 50
+	csrf.prevention.enable = false
+	csrf.prevention.token.endpoint = /csrf
+	csrf.prevention.token.expiration.minutes = 30
+	csrf.prevention.token.max.entries = 10000
+	debug = false
+	dos.filter.delay.ms = 100
+	dos.filter.enabled = false
+	dos.filter.insert.headers = true
+	dos.filter.ip.whitelist = []
+	dos.filter.managed.attr = false
+	dos.filter.max.idle.tracker.ms = 30000
+	dos.filter.max.requests.ms = 30000
+	dos.filter.max.requests.per.connection.per.sec = 25
+	dos.filter.max.requests.per.sec = 25
+	dos.filter.max.wait.ms = 50
+	dos.filter.throttle.ms = 30000
+	dos.filter.throttled.requests = 5
+	fetch.min.bytes = -1
+	host.name = rest-proxy
+	http2.enabled = true
+	id = 
+	idle.timeout.ms = 30000
+	kafka.rest.resource.extension.class = []
+	listener.protocol.map = []
+	listeners = [http://0.0.0.0:8082]
+	metric.reporters = []
+	metrics.jmx.prefix = kafka.rest
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	metrics.tag.map = []
+	nosniff.prevention.enable = false
+	port = 8082
+	producer.threads = 5
+	proxy.protocol.enabled = false
+	rate.limit.backend = guava
+	rate.limit.costs = 
+	rate.limit.default.cost = 1
+	rate.limit.enable = false
+	rate.limit.permits.per.sec = 50
+	rate.limit.timeout.ms = 0
+	reject.options.request = false
+	request.logger.name = io.confluent.rest-utils.requests
+	request.queue.capacity = 2147483647
+	request.queue.capacity.growby = 64
+	request.queue.capacity.init = 128
+	resource.extension.classes = []
+	response.http.headers.config = 
+	response.mediatype.default = application/json
+	response.mediatype.preferred = [application/json, application/vnd.kafka.v2+json]
+	rest.servlet.initializor.classes = []
+	schema.registry.url = http://localhost:8081
+	server.connection.limit = 0
+	shutdown.graceful.ms = 1000
+	simpleconsumer.pool.size.max = 25
+	simpleconsumer.pool.timeout.ms = 1000
+	ssl.cipher.suites = []
+	ssl.client.auth = false
+	ssl.client.authentication = NONE
+	ssl.enabled.protocols = []
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = 
+	ssl.keystore.location = 
+	ssl.keystore.password = [hidden]
+	ssl.keystore.reload = false
+	ssl.keystore.type = JKS
+	ssl.keystore.watch.location = 
+	ssl.protocol = TLS
+	ssl.provider = 
+	ssl.trustmanager.algorithm = 
+	ssl.truststore.location = 
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	streaming.connection.max.duration.grace.period.ms = 500
+	streaming.connection.max.duration.ms = 86400000
+	suppress.stack.trace.response = true
+	thread.pool.max = 200
+	thread.pool.min = 8
+	websocket.path.prefix = /ws
+	websocket.servlet.initializor.classes = []
+	zookeeper.connect = 
+ (io.confluent.kafkarest.KafkaRestConfig)
+[2022-12-12 17:45:42,867] INFO Logging initialized @2381ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log)
+[2022-12-12 17:45:42,979] INFO Initial capacity 128, increased by 64, maximum capacity 2147483647. (io.confluent.rest.ApplicationServer)
+[2022-12-12 17:45:43,196] INFO Adding listener with HTTP/2: http://0.0.0.0:8082 (io.confluent.rest.ApplicationServer)
+[2022-12-12 17:45:43,999] WARN Using default value http://localhost:8081 for config schema.registry.url. In a future release this config won't have a default value anymore. If you are using Schema Registry, please, specify schema.registry.url explicitly. Requests will fail in a future release if you try to use Schema Registry but have not specified a value for schema.registry.url. An empty value for this property means that the Schema Registry is disabled. (io.confluent.kafkarest.KafkaRestConfig)
+[2022-12-12 17:45:44,003] INFO SchemaRegistryConfig values: 
+	auto.register.schemas = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	use.latest.version = false
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+ (io.confluent.kafkarest.config.SchemaRegistryConfig)
+[2022-12-12 17:45:44,122] WARN Empty contextPath (org.eclipse.jetty.server.handler.ContextHandler)
+[2022-12-12 17:45:44,124] INFO Binding KafkaRestApplication to all listeners. (io.confluent.rest.Application)
+[2022-12-12 17:45:44,520] INFO jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 11.0.16.1+1-LTS (org.eclipse.jetty.server.Server)
+[2022-12-12 17:45:44,765] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session)
+[2022-12-12 17:45:44,765] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session)
+[2022-12-12 17:45:44,773] INFO node0 Scavenging every 660000ms (org.eclipse.jetty.server.session)
+[2022-12-12 17:45:45,693] WARN Using default value http://localhost:8081 for config schema.registry.url. In a future release this config won't have a default value anymore. If you are using Schema Registry, please, specify schema.registry.url explicitly. Requests will fail in a future release if you try to use Schema Registry but have not specified a value for schema.registry.url. An empty value for this property means that the Schema Registry is disabled. (io.confluent.kafkarest.KafkaRestConfig)
+[2022-12-12 17:45:45,707] WARN Using default value http://localhost:8081 for config schema.registry.url. In a future release this config won't have a default value anymore. If you are using Schema Registry, please, specify schema.registry.url explicitly. Requests will fail in a future release if you try to use Schema Registry but have not specified a value for schema.registry.url. An empty value for this property means that the Schema Registry is disabled. (io.confluent.kafkarest.KafkaRestConfig)
+[2022-12-12 17:45:45,745] WARN Specifying multiple synonyms for the same config: bootstrap.servers and client.bootstrap.servers. Using client.bootstrap.servers = kafka:9092. Please, specify only one of them. Configuration will fail in a future release for such cases. (io.confluent.kafkarest.KafkaRestConfig)
+[2022-12-12 17:45:45,754] WARN Using default value http://localhost:8081 for config schema.registry.url. In a future release this config won't have a default value anymore. If you are using Schema Registry, please, specify schema.registry.url explicitly. Requests will fail in a future release if you try to use Schema Registry but have not specified a value for schema.registry.url. An empty value for this property means that the Schema Registry is disabled. (io.confluent.kafkarest.KafkaRestConfig)
+[2022-12-12 17:45:45,850] WARN Using default value http://localhost:8081 for config schema.registry.url. In a future release this config won't have a default value anymore. If you are using Schema Registry, please, specify schema.registry.url explicitly. Requests will fail in a future release if you try to use Schema Registry but have not specified a value for schema.registry.url. An empty value for this property means that the Schema Registry is disabled. (io.confluent.kafkarest.KafkaRestConfig)
+[2022-12-12 17:45:47,481] INFO HV000001: Hibernate Validator 6.1.7.Final (org.hibernate.validator.internal.util.Version)
+[2022-12-12 17:45:49,147] INFO Started o.e.j.s.ServletContextHandler@6aa648b9{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler)
+[2022-12-12 17:45:49,189] INFO Started o.e.j.s.ServletContextHandler@44d70181{/ws,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler)
+[2022-12-12 17:45:49,296] INFO Started NetworkTrafficServerConnector@79dc5318{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8082} (org.eclipse.jetty.server.AbstractConnector)
+[2022-12-12 17:45:49,298] INFO Started @8832ms (org.eclipse.jetty.server.Server)
+[2022-12-12 17:45:49,298] INFO Server started, listening for requests... (io.confluent.kafkarest.KafkaRestMain)

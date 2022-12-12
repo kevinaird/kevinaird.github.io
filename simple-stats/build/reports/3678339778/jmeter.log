@@ -1,0 +1,11 @@
+START Running Jmeter on Mon Dec 12 18:45:56 CET 2022
+JVM_ARGS=-Xmn968m -Xms3872m -Xmx3872m
+jmeter args=-n -t /app/loadTest.jmx -l /app/3678339778/loadTest.jtl
+jmeter ALL ARGS=-Dlog4j2.formatMsgNoLookups=true -n -t /app/loadTest.jmx -l /app/3678339778/loadTest.jtl
+Creating summariser <summary>
+Created the tree successfully using /app/loadTest.jmx
+Starting standalone test @ December 12, 2022 6:45:58 PM CET (1670867158433)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +     23 in 00:00:01 =   20.1/s Avg:    13 Min:     1 Max:    72 Err:    23 (100.00%) Active: 22 Started: 22 Finished: 0
+summary +   9930 in 00:00:30 =  331.1/s Avg:     2 Min:     0 Max:   302 Err:  9930 (100.00%) Active: 622 Started: 622 Finished: 0
+summary =   9953 in 00:00:31 =  319.7/s Avg:     2 Min:     0 Max:   302 Err:  9953 (100.00%)
