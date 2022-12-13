@@ -1,7 +1,4 @@
 001,Kafka to Influx - Run 1
 002,Kafka to Influx - Run 2
 3678339778,GithubAction - Run1 - fail
-3679240992,GithubAction - Run2 - pass3680378375,influx-loadtest run 3680378375
-3680522290,influx-loadtest run 3680522290
-3680604531,influx-loadtest run 3680604531
-3689491296,main run 3689491296
+3679240992,GithubAction - Run2 - pass
