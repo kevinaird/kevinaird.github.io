@@ -1,0 +1,36 @@
+START Running Jmeter on Tue Dec 13 22:28:29 CET 2022
+JVM_ARGS=-Xmn966m -Xms3864m -Xmx3864m
+jmeter args=-n -t /app/loadTest.jmx -l /app/3689491296/loadTest.jtl
+jmeter ALL ARGS=-Dlog4j2.formatMsgNoLookups=true -n -t /app/loadTest.jmx -l /app/3689491296/loadTest.jtl
+Dec 13, 2022 10:28:30 PM java.util.prefs.FileSystemPreferences$1 run
+INFO: Created user preferences directory.
+Creating summariser <summary>
+Created the tree successfully using /app/loadTest.jmx
+Starting standalone test @ December 13, 2022 10:28:31 PM CET (1670966911028)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      1 in 00:00:03 =    0.4/s Avg:   360 Min:   360 Max:   360 Err:     0 (0.00%) Active: 50 Started: 50 Finished: 0
+summary +   8375 in 00:00:26 =  321.8/s Avg:    25 Min:     1 Max:  2389 Err:     0 (0.00%) Active: 570 Started: 570 Finished: 0
+summary =   8376 in 00:00:29 =  293.3/s Avg:    25 Min:     1 Max:  2389 Err:     0 (0.00%)
+summary +  26400 in 00:00:30 =  880.0/s Avg:    21 Min:     0 Max:   347 Err:     0 (0.00%) Active: 1170 Started: 1170 Finished: 0
+summary =  34776 in 00:00:59 =  593.9/s Avg:    22 Min:     0 Max:  2389 Err:     0 (0.00%)
+summary +  44400 in 00:00:30 = 1480.0/s Avg:    27 Min:     0 Max:   488 Err:     0 (0.00%) Active: 1770 Started: 1770 Finished: 0
+summary =  79176 in 00:01:29 =  894.1/s Avg:    25 Min:     0 Max:  2389 Err:     0 (0.00%)
+summary +  60415 in 00:00:30 = 2014.1/s Avg:   210 Min:     0 Max:  1322 Err:     0 (0.00%) Active: 2370 Started: 2370 Finished: 0
+summary = 139591 in 00:01:59 = 1177.4/s Avg:   105 Min:     0 Max:  2389 Err:     0 (0.00%)
+summary +  63576 in 00:00:30 = 2110.3/s Avg:  1170 Min:   392 Max:  2338 Err:     0 (0.00%) Active: 2967 Started: 2967 Finished: 0
+summary = 203167 in 00:02:29 = 1366.5/s Avg:   438 Min:     0 Max:  2389 Err:     0 (0.00%)
+summary +  59152 in 00:00:30 = 1978.1/s Avg:  1633 Min:   812 Max:  2910 Err:     0 (0.00%) Active: 3571 Started: 3571 Finished: 0
+summary = 262319 in 00:02:59 = 1468.9/s Avg:   708 Min:     0 Max:  2910 Err:     0 (0.00%)
+summary +  56799 in 00:00:30 = 1895.1/s Avg:  1984 Min:  1180 Max:  3676 Err:     0 (0.00%) Active: 4000 Started: 4000 Finished: 0
+summary = 319118 in 00:03:29 = 1530.1/s Avg:   935 Min:     0 Max:  3676 Err:     0 (0.00%)
+summary +  56336 in 00:00:30 = 1877.9/s Avg:  2123 Min:  1371 Max:  3580 Err:     0 (0.00%) Active: 4000 Started: 4000 Finished: 0
+summary = 375454 in 00:03:59 = 1573.9/s Avg:  1113 Min:     0 Max:  3676 Err:     0 (0.00%)
+summary +  55530 in 00:00:30 = 1833.5/s Avg:  2140 Min:   928 Max:  4161 Err:     0 (0.00%) Active: 4000 Started: 4000 Finished: 0
+summary = 430984 in 00:04:29 = 1603.1/s Avg:  1246 Min:     0 Max:  4161 Err:     0 (0.00%)
+summary +  57572 in 00:00:30 = 1937.7/s Avg:  2042 Min:   862 Max:  4068 Err:     0 (0.00%) Active: 4000 Started: 4000 Finished: 0
+summary = 488556 in 00:04:59 = 1636.4/s Avg:  1339 Min:     0 Max:  4161 Err:     0 (0.00%)
+summary +   9603 in 00:00:06 = 1713.3/s Avg:  1989 Min:   847 Max:  3385 Err:     0 (0.00%) Active: 0 Started: 4000 Finished: 4000
+summary = 498159 in 00:05:04 = 1637.8/s Avg:  1352 Min:     0 Max:  4161 Err:     0 (0.00%)
+Tidying up ...    @ December 13, 2022 10:33:35 PM CET (1670967215606)
+... end of run
+END Running Jmeter on Tue Dec 13 22:33:36 CET 2022
