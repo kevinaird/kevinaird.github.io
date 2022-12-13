@@ -1,5 +1,9 @@
 
 metrics:
+  jmeter:
+    type: embed
+    href: loadTest
+    
   # kafka container stats - cpu, memory
   kafka-container-stats:
     type: container
