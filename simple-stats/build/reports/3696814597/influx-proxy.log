@@ -1,0 +1,7 @@
+2022/12/14 11:37:22.750203 main.go:52: version: 2.5.10, commit: d066654, build: 2022-09-15 12:42:38
+2022/12/14 11:37:22.750245 config.go:147: 1 circles loaded from file
+2022/12/14 11:37:22.750264 config.go:149: circle 0: 1 backends loaded
+2022/12/14 11:37:22.750267 config.go:151: hash key: idx
+2022/12/14 11:37:22.750271 config.go:155: auth: false, encrypt: false
+2022/12/14 11:37:22.751329 main.go:67: http service start, listen on :8086
+2022/12/14 11:37:22.752109 http.go:199: http error: Get "http://influx-1:8086/ping": dial tcp 172.18.0.3:8086: connect: connection refused
