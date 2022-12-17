@@ -1,0 +1,34 @@
+
+metrics:
+  jmeter:
+    type: embed
+    href: loadTest
+  
+  # consume prometheus metrics from cadvisor
+  cadvisor:
+    type: exporter
+    endpoint: http://cadvisor:8080/metrics
+  
+  # influx container stats - cpu, memory
+  influx-contianer-stats:
+    type: container
+    name: influx
+  
+  # influx container stats - cpu, memory
+  influx-proxy-contianer-stats:
+    type: container
+    name: influx-proxy
+
+  # influx data stats - how many entries? i.e. SELECT COUNT(*) FROM transactions
+  influx-record-count:
+    type: influx
+    host: influx
+    port: 8086
+    database: loadrunner
+    query: SELECT count(*) FROM transactions
+    count: count_duration
+    
+# Write to a csv file
+output: /output/stats.csv
+interval: 10
+continueOnError: false

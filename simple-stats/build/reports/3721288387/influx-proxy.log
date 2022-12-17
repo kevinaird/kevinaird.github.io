@@ -1,0 +1,6 @@
+2022/12/17 13:34:21.938398 main.go:52: version: 2.5.10, commit: d066654, build: 2022-09-15 12:42:38
+2022/12/17 13:34:21.938437 config.go:147: 1 circles loaded from file
+2022/12/17 13:34:21.938454 config.go:149: circle 0: 1 backends loaded
+2022/12/17 13:34:21.938457 config.go:151: hash key: idx
+2022/12/17 13:34:21.938460 config.go:155: auth: false, encrypt: false
+2022/12/17 13:34:21.938970 main.go:67: http service start, listen on :8086
