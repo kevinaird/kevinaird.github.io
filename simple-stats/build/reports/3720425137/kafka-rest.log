@@ -1,0 +1,100 @@
+	at org.eclipse.jetty.server.HttpOutput.channelWrite(HttpOutput.java:269)
+	at org.eclipse.jetty.server.HttpOutput.flush(HttpOutput.java:751)
+	at org.glassfish.jersey.servlet.internal.ResponseWriter$NonCloseableOutputStreamWrapper.flush(ResponseWriter.java:307)
+	at org.glassfish.jersey.message.internal.CommittingOutputStream.flush(CommittingOutputStream.java:263)
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153)
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$UnCloseableOutputStream.flush(WriterInterceptorExecutor.java:281)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1187)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1009)
+	at com.fasterxml.jackson.jaxrs.base.ProviderBase.writeTo(ProviderBase.java:617)
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+	at org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor.aroundWriteTo(JsonWithPaddingInterceptor.java:85)
+	at org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+	at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundWriteTo(MappableExceptionWrapperInterceptor.java:61)
+	... 39 more
+Caused by: java.io.IOException: Broken pipe
+	at java.base/sun.nio.ch.FileDispatcherImpl.writev0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.writev(SocketDispatcher.java:51)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:182)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:130)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:493)
+	at java.base/java.nio.channels.SocketChannel.write(SocketChannel.java:507)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:274)
+	... 67 more
+
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-73"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-106"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-134"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-95"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-192"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-59"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-36"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-141"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-54"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-28"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-153"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-71"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-127"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-190"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-177"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-145"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-44"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-169"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-13"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-88"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-146"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-120"
+Exception in thread "qtp271095942-110" Exception in thread "qtp271095942-117" Exception in thread "qtp271095942-65" Exception in thread "qtp271095942-178" Exception in thread "qtp271095942-39" Exception in thread "qtp271095942-48" Exception in thread "qtp271095942-148" Exception in thread "qtp271095942-156" Exception in thread "qtp271095942-173" Exception in thread "qtp271095942-93" 
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-83"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-165"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-93"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-173"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-156"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-148"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-48"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-39"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-178"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-65"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-117"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-110"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-174"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-97"
+
+Exception: java.lang.OutOfMemoryError thrown from the UncaughtExceptionHandler in thread "qtp271095942-76"

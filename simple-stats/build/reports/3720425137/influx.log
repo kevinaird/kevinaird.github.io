@@ -1,0 +1,100 @@
+ts=2022-12-17T14:19:52.568054Z lvl=info msg="Listening on HTTP" log_id=0ep78540000 service=httpd addr=[::]:8086 https=false
+ts=2022-12-17T14:19:52.568067Z lvl=info msg="Starting retention policy enforcement service" log_id=0ep78540000 service=retention check_interval=30m
+ts=2022-12-17T14:19:52.568199Z lvl=info msg="Storing statistics" log_id=0ep78540000 service=monitor db_instance=_internal db_rp=monitor interval=10s
+ts=2022-12-17T14:19:52.568299Z lvl=info msg="Sending usage statistics to usage.influxdata.com" log_id=0ep78540000
+ts=2022-12-17T14:19:52.568690Z lvl=info msg="Listening for signals" log_id=0ep78540000
+[httpd] 127.0.0.1 - - [17/Dec/2022:14:19:55 +0000] "GET /ping HTTP/1.1" 204 0 "-" "InfluxDBShell/1.8.10" e1045256-7e15-11ed-8001-0242ac120002 116
+ts=2022-12-17T14:19:55.298019Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="CREATE DATABASE loadrunner"
+[httpd] 127.0.0.1 - - [17/Dec/2022:14:19:55 +0000] "POST /query?chunked=true&db=&epoch=ns&q=CREATE+DATABASE+loadrunner HTTP/1.1 " 200 57 "-" "InfluxDBShell/1.8.10" e1052a60-7e15-11ed-8002-0242ac120002 55781
+ts=2022-12-17T14:20:23.880092Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:20:23 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" f20e2cef-7e15-11ed-8003-0242ac120002 12618
+ts=2022-12-17T14:20:33.557992Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:20:33 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" f7d32b2e-7e15-11ed-8004-0242ac120002 566
+ts=2022-12-17T14:20:43.563048Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:20:43 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" fdc9cf49-7e15-11ed-8005-0242ac120002 493
+ts=2022-12-17T14:20:53.546803Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:20:53 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 03bd35d7-7e16-11ed-8006-0242ac120002 406
+ts=2022-12-17T14:21:03.565840Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:21:03 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 09b5ff96-7e16-11ed-8007-0242ac120002 424
+ts=2022-12-17T14:21:13.557521Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:21:13 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 0faa98ce-7e16-11ed-8008-0242ac120002 445
+ts=2022-12-17T14:21:23.570552Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:21:23 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 15a27aad-7e16-11ed-8009-0242ac120002 335
+ts=2022-12-17T14:21:33.553558Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:21:33 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 1b95c051-7e16-11ed-800a-0242ac120002 430
+ts=2022-12-17T14:21:43.557758Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:21:43 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 218c481b-7e16-11ed-800b-0242ac120002 349
+ts=2022-12-17T14:21:53.584930Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:21:53 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 27864e3b-7e16-11ed-800c-0242ac120002 398
+ts=2022-12-17T14:22:03.579994Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:22:03 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 2d7b6e09-7e16-11ed-800d-0242ac120002 449
+ts=2022-12-17T14:22:13.552617Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:22:13 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 336d2321-7e16-11ed-800e-0242ac120002 432
+ts=2022-12-17T14:22:23.593328Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:22:23 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 3969361d-7e16-11ed-800f-0242ac120002 595
+ts=2022-12-17T14:22:33.596329Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:22:33 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 3f5f7d66-7e16-11ed-8010-0242ac120002 830
+ts=2022-12-17T14:22:43.572586Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:22:43 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 4551d0f5-7e16-11ed-8011-0242ac120002 437
+ts=2022-12-17T14:22:53.568796Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:22:53 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 4b471f7b-7e16-11ed-8012-0242ac120002 318
+ts=2022-12-17T14:23:03.593266Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:23:03 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 5140ba8d-7e16-11ed-8013-0242ac120002 365
+ts=2022-12-17T14:23:13.582192Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:23:13 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 5734ebbe-7e16-11ed-8014-0242ac120002 347
+ts=2022-12-17T14:23:23.592387Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:23:23 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 5d2c5ad9-7e16-11ed-8015-0242ac120002 353
+ts=2022-12-17T14:23:33.593655Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:23:33 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 63226dda-7e16-11ed-8016-0242ac120002 387
+ts=2022-12-17T14:23:43.610473Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:23:43 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 691adee3-7e16-11ed-8017-0242ac120002 362
+ts=2022-12-17T14:23:53.615836Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:23:53 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 6f1191ca-7e16-11ed-8018-0242ac120002 5545
+ts=2022-12-17T14:24:03.590602Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:24:03 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 750398e3-7e16-11ed-8019-0242ac120002 478
+ts=2022-12-17T14:24:13.592756Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:24:13 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 7af9cf86-7e16-11ed-801a-0242ac120002 389
+ts=2022-12-17T14:24:23.604841Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:24:23 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 80f17820-7e16-11ed-801b-0242ac120002 954
+ts=2022-12-17T14:24:33.615412Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:24:33 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 86e9042e-7e16-11ed-801c-0242ac120002 1474
+ts=2022-12-17T14:24:43.601897Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:24:43 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 8cdcd6c4-7e16-11ed-801d-0242ac120002 3428
+ts=2022-12-17T14:24:53.614135Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:24:53 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 92d49375-7e16-11ed-801e-0242ac120002 397
+ts=2022-12-17T14:25:03.622530Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:25:03 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 98cbb975-7e16-11ed-801f-0242ac120002 522
+ts=2022-12-17T14:25:13.616339Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:25:13 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" 9ec0ae88-7e16-11ed-8020-0242ac120002 413
+ts=2022-12-17T14:25:23.629991Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:25:23 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" a4b8a372-7e16-11ed-8021-0242ac120002 403
+ts=2022-12-17T14:25:33.618584Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:25:33 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" aaacc859-7e16-11ed-8022-0242ac120002 325
+ts=2022-12-17T14:25:43.639996Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:25:43 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" b0a5ec76-7e16-11ed-8023-0242ac120002 366
+ts=2022-12-17T14:25:53.630608Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:25:53 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" b69a5f50-7e16-11ed-8024-0242ac120002 337
+ts=2022-12-17T14:26:03.629309Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:26:03 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" bc900df5-7e16-11ed-8025-0242ac120002 428
+ts=2022-12-17T14:26:13.638336Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:26:13 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" c2874d56-7e16-11ed-8026-0242ac120002 385
+ts=2022-12-17T14:26:23.634717Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:26:23 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" c87ca086-7e16-11ed-8027-0242ac120002 424
+ts=2022-12-17T14:26:33.640859Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:26:33 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" ce7372a6-7e16-11ed-8028-0242ac120002 809
+ts=2022-12-17T14:26:43.657041Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:26:43 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" d46bcbf4-7e16-11ed-8029-0242ac120002 371
+ts=2022-12-17T14:26:53.636587Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:26:53 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" da5e8f17-7e16-11ed-802a-0242ac120002 334
+ts=2022-12-17T14:27:03.635814Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:27:03 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" e0545205-7e16-11ed-802b-0242ac120002 336
+ts=2022-12-17T14:27:13.658248Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:27:13 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" e64d9ead-7e16-11ed-802c-0242ac120002 340
+ts=2022-12-17T14:27:23.663909Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:27:23 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" ec445cbc-7e16-11ed-802d-0242ac120002 344
+ts=2022-12-17T14:27:33.649747Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:27:33 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" f238147e-7e16-11ed-802e-0242ac120002 350
+ts=2022-12-17T14:27:43.649937Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:27:43 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" f82dfe40-7e16-11ed-802f-0242ac120002 424
+ts=2022-12-17T14:27:53.660333Z lvl=info msg="Executing query" log_id=0ep78540000 service=query query="SELECT count(*) FROM loadrunner.autogen.transactions"
+[httpd] 172.18.0.9 - root [17/Dec/2022:14:27:53 +0000] "GET /query?db=loadrunner&epoch=&p=%5BREDACTED%5D&params=%7B%7D&q=SELECT+count%28%2A%29+FROM+transactions&rp=&u=root HTTP/1.1" 200 33 "-" "-" fe257368-7e16-11ed-8030-0242ac120002 367
